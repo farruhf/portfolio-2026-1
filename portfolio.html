@@ -663,16 +663,16 @@
   // ═══════════════════════════════════════════════════════════
 
   // Total number of portfolio images (e.g. if you have portfolio.1.jpg → portfolio.18.jpg, set 18)
-  const PORTFOLIO_COUNT = 0;
+  const PORTFOLIO_COUNT = 15;
 
   // Which image number does each tab start at? (1-indexed, matching your file names)
   const PROJECT_FIRST_IMAGE = {
     resume: 1,   // ← set to the image number where your resume page is
-    proj1:  1,   // Safe Station — e.g. set to 3 if it starts at portfolio.3.jpg
-    proj2:  1,   // Project 2
-    proj3:  1,   // Project 3
-    proj4:  1,   // Project 4
-    proj5:  1,   // Project 5
+    proj1:  4-5,   // Safe Station — e.g. set to 3 if it starts at portfolio.3.jpg
+    proj2:  6-8,   // Project 2
+    proj3:  9-12,   // Project 3
+    proj4:  13,   // Project 4
+    proj5:  14,   // Project 5
   };
 
   // ═══════════════════════════════════════════════════════════
@@ -681,9 +681,9 @@
   //  All cd images are in one sequence; set where each project starts
   // ═══════════════════════════════════════════════════════════
 
-  const CD_COUNTS = {
-    cd1: 0,   // total images for CD Project 1
-    cd2: 0,   // total images for CD Project 2
+  const CD_COUNTS = 42{
+    cd1: 1-19,   // total images for CD Project 1
+    cd2: 20-42,   // total images for CD Project 2
   };
   // cd images are named cd.1.jpg onwards per project.
   // cd1 images: cd.1.jpg, cd.2.jpg … up to CD_COUNTS.cd1
@@ -691,7 +691,7 @@
   // SIMPLEST APPROACH: keep them in one sequence and set start index:
   const CD_START = {
     cd1: 1,                        // cd1 always starts at cd.1.jpg
-    cd2: 1,                        // ← set to CD_COUNTS.cd1 + 1  e.g. if cd1 has 8 images, set 9
+    cd2: 20,                        // ← set to CD_COUNTS.cd1 + 1  e.g. if cd1 has 8 images, set 9
   };
   const CD_NAMES = { cd1: "CD Project 1", cd2: "CD Project 2" };
   // ↑ Update these to match the button labels in the HTML
@@ -701,7 +701,7 @@
   //  Name them: pm.1.jpg, pm.2.jpg, pm.3.jpg ...
   // ═══════════════════════════════════════════════════════════
 
-  const MODELS_COUNT = 0;   // total number of pm images
+  const MODELS_COUNT = 7;   // total number of pm images
 
   // ═══════════════════════════════════════════════════════════
   //  DOWNLOAD LINKS  (PDF files for the nav buttons)
