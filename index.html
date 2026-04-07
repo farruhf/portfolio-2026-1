@@ -257,7 +257,7 @@
     .img-body::-webkit-scrollbar-thumb:hover { background: var(--muted); }
 
     .img-body img {
-      width: 85%;
+      width: 100%;
       max-height: 100%;
       object-fit: contain;
       display: block;
@@ -321,7 +321,13 @@
       background: #111;
       scroll-behavior: smooth;
     }
-    .fs-img-body img { width: 100%; display: block; }
+    .fs-img-body img {
+      max-width: 100;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
     .fs-ph {
       flex: 1; display: flex; align-items: center; justify-content: center;
       flex-direction: column; gap: 0.75rem;
